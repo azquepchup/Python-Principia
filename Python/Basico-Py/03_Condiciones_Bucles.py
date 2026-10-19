@@ -72,7 +72,7 @@ print(sep)
 # Se repita algo hasta que indiquemos que se deje de repetir
 numero = 0
 #while numero < 10:
-  #  print(numero):  #! se ejecuta infinitamente
+#  print(numero):  #! se ejecuta infinitamente
     
 #Para detenerlo
 

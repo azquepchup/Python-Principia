@@ -38,10 +38,23 @@ calorias = {"Day 1": 1750, "Day 2": 2100, "Day 3": 1700}
 
 series = pd.Series(calorias) #Al hacerlo diccionario automaticamente la enumeración para este caso seria Day 1, Day 2 etc
 
-series.loc["Day 2"] +=500 #Sume 500 al valor en Day 2
+series.loc["Day 2"] += 500 #Sume 500 al valor en Day 2
 print(series)
 print(series.loc["Day 2"])
 print(series[series < 2000])
 
+print(sep)
 # * DataFrames: Es una estructura de datos con filas y columnas es bisimensional similar a una hoja de calculo de excel
 
+Datos = {"Name" : ["Juan", "Carlos", "Daniel", "Jose", "Ronaldo"], #Aqui pongo datos de nombre esta sera la etiqueta de la columna y sus datos respectivamente 
+            "Edad" : [30, 10, 20, 38, 58] #Igual que el anterior etiqueta de la columna y datos de cada 
+}
+
+df = pd.DataFrame(Datos, index= ["Empleado 1", "Empleado 2", "Empleado 3", "Empleado 4", "Empleado 5"]) #index es para poner etiquetas a las filas
+print(df)
+
+print(df.loc["Empleado 1"]) # veo la info pip install pylsp-rope --break-system-packagesde uno solo, escribiendo la etiqueta de su fila
+print(df.iloc[2]) #* Veo la info de uno solo, escribiendo la posición
+
+#* Añardir una nueva columna 
+df["Puesto"] = ["Cocinero", "Capacitación", "Cajero", "Mesero", ""]
